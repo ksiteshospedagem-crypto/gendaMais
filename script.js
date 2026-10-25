@@ -2,6 +2,7 @@
 const butao = document.querySelectorAll(".selecao");
 const campo = document.querySelectorAll(".painel");
 
+
 butao.forEach(btn => {//percorre pelos botão
     btn.addEventListener("click", () => {// da o evento de click
         campo.forEach(p => p.classList.remove('ativo'));// tira o div de flex/ativo
@@ -10,6 +11,13 @@ butao.forEach(btn => {//percorre pelos botão
 });
 
 campo[0].classList.add('ativo');// deixa a primera div aparecendo 
+
+const pag = document.querySelector("#area_cliente");
+
+pag.addEventListener("click", function() {
+    window.location.href = "Cliente.html";
+});
+
 // nav-bar fim js
 
 
@@ -40,4 +48,9 @@ document.getElementById("sel-dat-hoj").addEventListener("click", () => {
 mostrarData();
 // painel_agenda data top fim js
 
-
+// alerta de direitos
+document.addEventListener("contextmenu", function(evento) {
+    evento.preventDefault();
+    alert("© 2026 AgendaMais. Todos os direitos reservados.");
+});
+// fim fo alerta

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agendamento</title>
+    <title>agendamento.empressa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- inicio da nav bar-->
     <div class="base">
         <div class="NAV-BAR"> 
             <h1 id="text">AgendaMais</h1>
@@ -15,19 +16,45 @@
             <button class="selecao" data-alvo="painel_servico">SERVIÇO</button>
             <button class="selecao" data-alvo="painel_profissional">PROFISSIONAL</button>
             <button class="selecao" data-alvo="painel_relatorios">RELATORIOS</button>
+            <button class="byt-ini" id="area_cliente">INICIO</button>
         </div>
+    <!-- fim da nav bar-->
 
 
         <!-- inicio agenda -->
         <div id="painel_agenda" class="painel">
+
+            <div class="age-titulo-principal">
             <h1>Agenda da equipe</h1>
+            </div>
+
             <div id="age_org">
                 <button id="sel-dat-ant" class="but-data">&lt</button> 
                 <span id="data_texto"></span>
                 <button id="sel-dat-pro" class="but-data">&gt</button>
                 <button id="sel-dat-hoj">hoje</button>
             </div>
-        
+
+            <div class="age-titulo">
+                <h1>horario</h1> 
+                <h1>Cliente</h1> 
+                <h1>Serviço</h1> 
+                <h1>Profissional</h1> 
+                <h1>Status</h1>
+            </div>
+        <div class="agenda-principal">
+            <table>
+                <tr>
+                    <th>horario</th>
+                    <th>cliente</th>
+                    <th>serviços</th>
+                    <th>Profissional</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+
+
+        </div>
             
             
         </div>

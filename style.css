@@ -21,8 +21,6 @@ body{
     display: flex;
     justify-content: flex-start;/*gruda na esquerda*/
     align-items: center;/*deixa os items no centro*/
-
-    gap: 7px;
     
 
     border-radius: 15px;/*deixa as bordas redondas*/
@@ -51,6 +49,7 @@ body{
     align-items: center;
 }
 
+.byt-ini,
 .selecao{
     width: 13vw;
     height: 5vh;
@@ -94,9 +93,12 @@ body{
 #painel_agenda{
     flex-direction: column;
     justify-content: top; /* exibicao no topo/meio, chat-input embaixo */
-    align-items:flex-start;
-    padding: 10px;
-    
+    align-items: center;
+    padding: 18px;
+    gap: 10px;
+
+
+
 }
 
 #age_org{
@@ -130,4 +132,34 @@ body{
 #data_texto{
     align-items: center;
     font-size: 3vh;
+}
+
+.age-titulo{
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    height: 5vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.age-titulo-principal{
+    width: 100%;
+    font-size: 2vh;
+}
+
+.agenda-principal{
+    background-color: rgb(252, 251, 251);
+    height: 68vh;
+    width: 50vw;
+    border-radius: 20px;
+
+    gap: 60px;
+}
+
+.agenda-principal th{
+    width: 15vw;
 }
