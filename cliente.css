@@ -18,6 +18,16 @@ body{
     background-color: aliceblue;
     height: 70vh;
     width: 30vw;
-
     border-radius: 15px;
+    align-items: end;
+    padding: 7px;
+}
+
+.nav-bar{
+    background-color: rgb(255, 210, 8);
+    height: 3vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
