@@ -5,8 +5,11 @@ document.addEventListener("contextmenu", function(evento) {
 });
 // fim fo alerta
 
-const but = document.querySelector("#emp");
+
+// botao para mudar para pagina empressa inicio
+const but = document.querySelector(".empressa-cliente");
 
 but.addEventListener("click", function() {
     window.location.href = "index.html";
 });
+// botao para mudar para pagina empressa fim
