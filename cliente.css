@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     justify-content: end;
     padding: 20px;
-    gap: 20px;
+    gap: 12px;
 }
 
 .nav-bar{
@@ -46,6 +46,9 @@ body{
     border-radius: 15px;
 }
 
+#cen-but:hover,
+#tex_not:hover,
+#loc_but:hover,
 #but_cli:hover{
     background-color: rgb(251, 255, 0);
 }
@@ -73,7 +76,6 @@ body{
     height: 30vh;
     width: 13vw;
     border-radius: 15px;
-    background-color: rgb(251, 255, 0);
     padding: 7px;
     flex-direction: column;
 
@@ -101,3 +103,41 @@ body{
     gap: 9vw;
     padding: 18px;
 }
+
+.loca-atu {
+    padding: 10px;
+    height: 3vh;
+    width: 31vw;
+    display: flex;
+    overflow: hidden;
+    gap: 18px;
+}
+
+#localização{
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+#loc_but{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.top-tex{
+    display:flex;
+    height: 3vh;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+    gap: 19vw;
+}
+
+#tex_not{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
