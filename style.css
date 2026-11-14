@@ -13,9 +13,35 @@ body{
     background-color:black;
 }
 
+@media (min-width: 1025px) {
+  /*pc*/
+.base {
+  height: 90vh;
+  width: 78vw;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*tablet*/
+.base {
+  width: 70vw;
+  max-width: 750px;
+  min-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*celular*/
+  .base {
+    width: 75vw;
+    height: 68vh;
+  }
+}
+/* responsividade fim */
+
 .base{
-    height: 90vh;
-    width: 78vw;
+  
     background-color: aliceblue;
 
     display: flex;
