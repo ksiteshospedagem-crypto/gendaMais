@@ -88,6 +88,7 @@ body{
 
     gap: 153px;
     padding-left: 9px;
+    overflow: hidden;
   }
 
   #age_org{
@@ -337,7 +338,7 @@ body{
 }
 
 .agenda-principal{
-    background-color: rgb(225, 0, 0);
+    background-color: rgb(248, 248, 248);
     border-radius: 20px;
 
 }
