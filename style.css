@@ -98,6 +98,44 @@ body{
     height: 84vh;
     width: 100%;
   }
+
+
+.agenda-principal{
+  height: 60vh;
+  width: 90vw;
+
+  
+  padding-left: 30px;
+  font-size: 11px;
+  
+}
+
+  .age-titulo{
+    height: 5vh;
+    width: 93vw;
+
+    font-size: 7px;
+
+    gap: 27px;
+  }
+
+  #age_org{
+    height: 4vh;
+    width: 80vw;
+  }
+
+  .but-data,
+  #sel-dat-hoj{
+    width: 6vw;
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+  }
+
+#data_texto{
+  font-size: 15px;
+}
   
 }
 /* responsividade fim */
@@ -183,25 +221,14 @@ body{
 
 #age_org{
     display: flex;
-
-    width: 70vw;
-    height: 5vh;
     
     justify-content: center;
     gap: 7px;
 }
 
-.but-data{
-    width: 2vw;
-    border-radius: 10px;
-    background-color: aliceblue;
 
-    border-color: aliceblue;
-    cursor: pointer;
-}
-
+.but-data,
 #sel-dat-hoj{
-    width: 4vw;
     border-radius: 10px;
     background-color: aliceblue;
 
@@ -211,28 +238,21 @@ body{
 
 #data_texto{
     align-items: center;
-    font-size: 3vh;
 }
 
 .age-titulo{
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
-    height: 5vh;
-    width: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60px;
 }
 
 .agenda-principal{
-    background-color: rgb(252, 251, 251);
-    height: 68vh;
-    width: 50vw;
+    background-color: rgb(225, 0, 0);
     border-radius: 20px;
 
-    gap: 60px;
 }
 
 .agenda-principal th{
