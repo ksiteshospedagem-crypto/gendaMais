@@ -47,6 +47,9 @@ body{
   .centro-cliente {
     width: 73vw;
     height: 45vh;
+
+    gap: 20px;
+    
   }
 
   .text-cen-cli {
@@ -129,8 +132,6 @@ body{
     overflow: hidden;
     justify-content: end;
     flex-direction: column;
-
-  gap: 12px;
     
 
     background-image: url(https://i.pinimg.com/736x/f0/62/40/f06240d822b067a169db9d30525ef0e8.jpg);
