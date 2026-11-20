@@ -108,7 +108,7 @@ body{
     display: flex;
     align-items: center;
   }
-
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   /*tablet*/
 .base {
@@ -140,6 +140,7 @@ body{
     left: 0;
 
     z-index: 1000;
+    gap: 15px;
   }
 
   .NAV-BAR.fechado {
@@ -221,8 +222,6 @@ body{
 
 #data_texto{
   font-size: 15px;
-}
-  
 }
   
 }
