@@ -18,7 +18,16 @@ pag.addEventListener("click", function() {
     window.location.href = "Cliente.html";
 });
 
+
+const menu = document.querySelector(".NAV-BAR");
+const butm = document.querySelector("#menu-butt");
+
+butm.addEventListener('click', () => {
+  menu.classList.toggle('fechado');
+});
+
 // nav-bar fim js
+
 
 
 // painel_agenda data top inicio js
