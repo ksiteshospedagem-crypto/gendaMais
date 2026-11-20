@@ -9,10 +9,7 @@
 <body>
     <div class="base">
 
-        <div class="top-ini">
-            
-        </div>
-
+        <div id="painel-inicial" class="painel">
             <div class="top-tex">
                 <h1>AgendaMais</h1>
                 <button id="tex_not">
@@ -42,25 +39,66 @@
                     </button>
 
                 </div>
-            
+        </div>
             
 
             </div>
+        
+        <div id="painel-serviços" class="painel">
+            <div class="top-ser">
+                <button class="vol-ser">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFycm93LWxlZnQgcHJldmlldy1pY29uIj48cGF0aCBkPSJtMTIgMTktNy03IDctNyIvPjxwYXRoIGQ9Ik0xOSAxMkg1Ii8+PC9zdmc+">
+                </button>
+
+                <h1 id="text-ser">Serviços</h1> 
+
+                <button class="but-pes-ser">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNlYXJjaCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Im0yMSAyMS00LjM0LTQuMzQiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PC9zdmc+">
+                </button>
+            </div>
+
+            <div class="filtro-ser">
+                <button class="sel-fil-ser" id="tod-ser">Todos</button>
+                <button class="sel-fil-ser" id="cab-ser">Cabelo</button>
+                <button class="sel-fil-ser" id="bar-ser">Barba</button>
+                <button class="sel-fil-ser" id="unh-ser">Unhas</button>
+            </div>
+
+            <div class="opç-ser">
+
+            </div>
+
+        </div>
+
+        <div id="painel-agendamento" class="painel">
+            <div>
+                <h1>Profissional e horario</h1>
+            </div>
+
+            <div>
+                
+            </div>
+
+            <div>
+                
+            </div>
+
+        </div>
 
         <div class="nav-bar">
-            <button class="inicio-cliente" id="but_cli">
+            <button class="but_cli" data-alvo="painel-inicial">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhvdXNlIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTE1IDIxdi04YTEgMSAwIDAgMC0xLTFoLTRhMSAxIDAgMCAwLTEgMXY4Ii8+PHBhdGggZD0iTTMgMTBhMiAyIDAgMCAxIC43MDktMS41MjhsNy02YTIgMiAwIDAgMSAyLjU4MiAwbDcgNkEyIDIgMCAwIDEgMjEgMTB2OWEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMnoiLz48L3N2Zz4=">
             </button>
 
-            <button class="serviços-cliente" id="but_cli">
+            <button class="but_cli" data-alvo="painel-serviços">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNjaXNzb3JzIHByZXZpZXctaWNvbiI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNOC4xMiA4LjEyIDEyIDEyIi8+PHBhdGggZD0iTTIwIDQgOC4xMiAxNS44OCIvPjxjaXJjbGUgY3g9IjYiIGN5PSIxOCIgcj0iMyIvPjxwYXRoIGQ9Ik0xNC44IDE0LjggMjAgMjAiLz48L3N2Zz4=">
             </button>
             
-            <button class="agendamento-cliente" id="but_cli">
+            <button class="but_cli" data-alvo="painel-agendamento" > 
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNhbGVuZGFyLWRheXMgcHJldmlldy1pY29uIj48cGF0aCBkPSJNOCAydjMiLz48cGF0aCBkPSJNMTYgMnYzIi8+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMiIvPjxwYXRoIGQ9Ik0zIDloMTgiLz48cGF0aCBkPSJNOCAxM2guMDEiLz48cGF0aCBkPSJNMTIgMTNoLjAxIi8+PHBhdGggZD0iTTE2IDEzaC4wMSIvPjxwYXRoIGQ9Ik04IDE3aC4wMSIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48cGF0aCBkPSJNMTYgMTdoLjAxIi8+PC9zdmc+">
             </button>
 
-            <button class="perfil-cliente" id="but_cli">
+            <button class="but_cli" data-alvo="painel-perfil">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXVzZXItcm91bmQgcHJldmlldy1pY29uIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjgiIHI9IjUiLz48cGF0aCBkPSJNMjAgMjFhOCA4IDAgMCAwLTE2IDAiLz48L3N2Zz4=">
             </button>
 

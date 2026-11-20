@@ -8,15 +8,35 @@ document.addEventListener("contextmenu", function(evento) {
 // fim fo alerta
 
 
-// botao para mudar para pagina empressa inicio
+// nav-bar inicio
 
+
+// inicio bota que troca de pagina
 const but = document.querySelector(".empressa-cliente");
 
 but.addEventListener("click", function() {
     window.location.href = "index.html";
 });
 
-// botao para mudar para pagina empressa fim
+
+// fim botao que troca de pagina
+
+// bota que adciona ativo inicio
+const botao = document.querySelectorAll('.but_cli');
+const campo = document.querySelectorAll('.painel');
+
+botao.forEach(btn => {//percorre pelos botão
+    btn.addEventListener("click", () => {// da o evento de click
+        campo.forEach(p => p.classList.remove('ativo'));// tira o div de flex/ativo
+        document.getElementById(btn.dataset.alvo).classList.add('ativo');// adiciona ativo ao div
+    });
+});
+
+campo[0].classList.add('ativo');// deixa a primera div aparecendo 
+
+// bota que adciona ativo  fim
+
+// nav-bar fim
 
 
 // localização atual inicio
