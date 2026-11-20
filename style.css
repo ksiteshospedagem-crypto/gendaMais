@@ -17,12 +17,97 @@ body{
 
 @media (min-width: 1025px) {
   /*pc*/
-.base {
-  height: 90vh;
-  width: 78vw;
+  .base {
+    width: 75vw;
+    height: 80vh;
   }
+
+
+
+
+  
+
+  .NAV-BAR {
+    height: 100%;
+    width: 10vw;
+
+    gap: 20px;
+  }
+
+  #menu-butt{
+  display: none;
 }
 
+
+
+
+  
+
+  #text{
+    font-size: 26px;
+  }
+
+  .age-titulo-principal{
+    width: 100%;
+    font-size: 15px;
+    align-items: end;
+    display: flex;
+    padding: 15px;
+  }
+
+  .byt-ini,
+  .selecao{
+  width: 9vw;
+  height: 4vh;
+  font-size: 8px;
+  padding: 10px;
+}
+
+  .painel{
+    height: 84vh;
+    width: 83%;
+    
+  }
+
+
+.agenda-principal{
+  height: 60vh;
+  width: 58vw;
+
+  
+  padding-left: 30px;
+  font-size: 20px;
+  
+}
+
+  .age-titulo{
+    height: 5vh;
+    width: 60vw;
+
+    font-size: 10px;
+
+    gap: 153px;
+    padding-left: 9px;
+  }
+
+  #age_org{
+    height: 4vh;
+    width: 80vw;
+  }
+
+  .but-data,
+  #sel-dat-hoj{
+    width: 2vw;
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #data_texto{
+    display: flex;
+    align-items: center;
+  }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /*tablet*/
@@ -38,6 +123,7 @@ body{
   .base {
     width: 100vw;
     height: 80vh;
+
   }
 
 
@@ -138,6 +224,8 @@ body{
 }
   
 }
+  
+}
 /* responsividade fim */
 
 .base{
@@ -164,7 +252,7 @@ body{
                 0PX 0PX 10PX rgb(0, 0, 0);
 
 
-    gap: 10px;
+    
     overflow: auto;
     display: flex;
     flex-direction: column;
