@@ -316,3 +316,8 @@ width: 5vw;
 height: 4vh;
 border: none;
 }
+
+#painel-agendamento{
+  align-items: center;
+  flex-direction: column;
+}
